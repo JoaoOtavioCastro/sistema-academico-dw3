@@ -1,0 +1,45 @@
+### GetAllSalasDeAula - Retorna todas as salas de aula (GET)
+GET http://localhost:3000/api/salasdeaula
+Content-Type: application/json
+
+###
+
+### GetSalasDeAulaByID - Retorna uma sala de aula específica pelo ID (GET)
+GET http://localhost:3000/api/salasdeaula/1
+Content-Type: application/json
+
+###
+
+### InsertSalasDeAula - Insere uma nova sala de aula (POST)
+POST http://localhost:3000/api/salasdeaula
+Content-Type: application/json
+
+{
+  "descricao": "Sala 104",
+  "localizacao": "Prédio D",
+  "capacidade": 40
+}
+
+###
+
+### UpdateSalasDeAula - Atualiza uma sala de aula pelo ID (PUT)
+PUT http://localhost:3000/api/salasdeaula/2
+Content-Type: application/json
+
+{
+  "descricao": "Sala Atualizada",
+  "localizacao": "Prédio A",
+  "capacidade": 50
+}
+
+###
+
+### DeleteSalasDeAula (Soft Delete) - Marca uma sala de aula como removida (DELETE)
+DELETE http://localhost:3000/api/salasdeaula/2
+Content-Type: application/json
+
+###
+
+### GetAllSalasDeAula - Confere salas não removidas após soft delete (GET)
+GET http://localhost:3000/api/salasdeaula
+Content-Type: application/json
