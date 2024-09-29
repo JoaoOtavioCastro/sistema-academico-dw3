@@ -6,6 +6,10 @@ Repositório criado para atividade de Desenvolvimento Web 3
 
 Este projeto é um módulo de manutenção de salas de aula de um sistema ERP escolar. Ele permite realizar as operações de CRUD (Create, Read, Update, Delete) de salas de aula por meio de uma API RESTful. O projeto foi desenvolvido em Node.js utilizando o Express e o banco de dados SQLite com o padrão arquitetural MVC (Model-View-Controller).
 
+## Regras de Negócio
+
+![Regras de negócio](/regras_de_negocio.png)
+
 ## Funcionalidades
 
 As operações CRUD disponíveis são:
